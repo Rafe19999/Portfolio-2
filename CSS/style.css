@@ -443,3 +443,61 @@ footer p {
   }
 
 }
+
+/* For tablet devices */
+
+@media screen and (min-width:576px) and (max-width:990px) {
+
+  nav,
+  .banner {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .banner_contants .button {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav{
+    position: static;
+  }
+
+  .about{
+    margin: auto;
+    max-width: 100%;
+  }
+  .about_me{
+    margin: auto;
+    width: 100%;
+  }
+ .about_me p, h1{
+  margin: auto;
+  padding: 10px;
+ }
+ .section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+ }
+ .cover{
+  flex-direction: column;
+ }
+
+ .cover .last{
+  padding: 30px;
+ }
+ .resume_info{
+  max-width: 100%;
+}
+.contacts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+  header {
+    background-image: url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
